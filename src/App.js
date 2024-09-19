@@ -29,7 +29,7 @@ function App() {
     };
 
     if (isEditing) {
-      fetch(`http://localhost:5082/${editId}`, {
+      fetch(`https://todoappdotnetbackend-bmfvekerfhghdfhw.canadacentral-01.azurewebsites.net/${editId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ function App() {
           console.log('Error updating todo:', error);
         });
     } else {
-      fetch('http://localhost:5082/', {
+      fetch('https://todoappdotnetbackend-bmfvekerfhghdfhw.canadacentral-01.azurewebsites.net/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5082/${id}`, {
+    fetch(`https://todoappdotnetbackend-bmfvekerfhghdfhw.canadacentral-01.azurewebsites.net/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
