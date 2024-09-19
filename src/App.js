@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   const fetchTodos = () => {
-    fetch('http://localhost:5082')
+    fetch('https://todoappdotnetbackend-bmfvekerfhghdfhw.canadacentral-01.azurewebsites.net/')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
